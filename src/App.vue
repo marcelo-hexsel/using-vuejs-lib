@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <component-a label="testing external component" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ExternalComponents from 'vuejs-component-lib'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ComponentA: ExternalComponents.ComponentA
   }
 }
 </script>
